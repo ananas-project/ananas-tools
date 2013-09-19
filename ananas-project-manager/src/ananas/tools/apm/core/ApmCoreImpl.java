@@ -9,6 +9,7 @@ final class ApmCoreImpl implements ApmCore {
 	private File _base_path;
 	private File _root_node;
 	private NodeManager _node_man;
+	private String _dest_project_name;
 
 	@Override
 	public File getRootNode() {
@@ -73,6 +74,16 @@ final class ApmCoreImpl implements ApmCore {
 		} else {
 			return this._node_man;
 		}
+	}
+
+	@Override
+	public String getDestProjectName() {
+		return this._dest_project_name;
+	}
+
+	@Override
+	public void setDestProjectName(String name) {
+		this._dest_project_name = name;
 	}
 
 }

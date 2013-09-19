@@ -38,4 +38,8 @@ public interface ApmCore {
 
 	void setBasePath(File file);
 
+	String getDestProjectName();
+
+	void setDestProjectName(String name);
+
 }
