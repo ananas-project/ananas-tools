@@ -1,0 +1,13 @@
+<CommandSet xmlns="ananas:blueprint4:terminal" package="ananas.tools.apm.cmd">
+
+	<Command name="ls" class=".ListSub" />
+	<Command name="update" class=".Update" />
+
+	<CommandSet name="base" class=".Base">
+		<Command name="reset" class=".BaseReset" />
+	</CommandSet>
+
+	<Command name="exit" />
+	<Command name="help" class="ananas.blueprint4.terminal.commands.Help" />
+
+</CommandSet>
