@@ -2,7 +2,7 @@
 
 	<Command name="ls" class=".ListSub" />
 	<Command name="update" class=".Update" />
-	<Command name="src-copy" class=".SrcCopy" />
+	<Command name="cp-src" class=".SrcCopy" />
 	
 	<CommandSet name="base" class=".Base">
 		<Command name="reset" class=".BaseReset" />
