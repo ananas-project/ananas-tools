@@ -50,8 +50,9 @@ class NodeManagerImpl implements NodeManager {
 		public NodeManager build(File root) {
 
 			if (root == null) {
-				throw new RuntimeException("cannot find ROOT node file '"
-						+ Const.node_file_name + "' !");
+				throw new RuntimeException(
+						"cannot find ROOT node (node.type=workspace) file '"
+								+ Const.node_file_name + "' !");
 			}
 
 			__listAllFilesInDir(root.getParentFile(), this, 64);
